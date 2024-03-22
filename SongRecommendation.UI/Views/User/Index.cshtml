@@ -1,0 +1,40 @@
+﻿@{
+	ViewData["Title"] = "Menu Page";
+}
+<h2>@ViewData["Title"]</h2>
+<br />
+
+<div class="row">
+	<div class="col-md-4">
+		<div class="card">
+			<div class="card-header">
+				<h3>Create User</h3>
+			</div>
+			<div class="card-body">
+				<p>Register as a user</p>
+				<a asp-action="AddUser" class="btn btn-primary">AddUser</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card">
+			<div class="card-header">
+				<h3>Get All Users</h3>
+			</div>
+			<div class="card-body">
+				<p>View List of all Users</p>
+				<a asp-action="GetAllUsers" class="btn btn-primary">Get All Users</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card">
+			<div class="card-header">
+				<h3>Logout</h3>
+			</div>
+			<div class="card-body">
+				<p>Logout from the application</p>
+				<a asp-action="Logout" class="btn btn-primary">Logout</a>
+			</div>
+		</div>
+	</div>
